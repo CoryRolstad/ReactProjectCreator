@@ -1,6 +1,6 @@
 param (
     [Parameter(Mandatory=$true)][string]$appName = $( Read-Host "Application Name"),
-    [Parameter(Mandatory=$true)][string]$appDirectory = $( Read-Host "Full Application Directory Path"),
+    [Parameter(Mandatory=$true)][string]$appDirectory = $( Read-Host "Full Application Directory Path")
  )
 "FROM node:latest
  RUN npm install -g npm@8.3.0
