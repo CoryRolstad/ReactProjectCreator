@@ -23,7 +23,7 @@ services:
       - ./${appName}:/app
 
 volumes:
-  wordpress:" | Out-File -Encoding utf8 -FilePath ${appDirectory}/docker-compose.yml
+  react:" | Out-File -Encoding utf8 -FilePath ${appDirectory}/docker-compose.yml
 
 docker build . -t react/cli -f ${appDirectory}/Dockerfile
 docker run -v ${appDirectory}:/app react/cli create-react-app $appName
